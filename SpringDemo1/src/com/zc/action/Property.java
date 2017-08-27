@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value="/property/")
 public class Property {
     
+	public Property() {
+		System.out.println("Property");
+	}
     @RequestMapping(value="read.do")
     public static String read(HttpServletRequest request,HttpServletResponse response,ModelMap model){
         //model.addAttribute("msg", "Hello World !");
